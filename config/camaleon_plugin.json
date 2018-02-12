@@ -1,0 +1,14 @@
+{
+  "title": "Camaleon Image Optimizer",
+  "descr": "",
+  "key": "camaleon_image_optimizer",
+  "helpers": [
+    "Plugins::CamaleonImageOptimizer::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["camaleon_image_optimizer_on_active"],
+    "on_inactive": ["camaleon_image_optimizer_on_inactive"],
+    /* "plugin_options": ["camaleon_image_optimizer_on_plugin_options"], */
+    "before_upload": ["cama_optimize_image"]
+  }
+}

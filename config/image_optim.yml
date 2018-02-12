@@ -1,0 +1,17 @@
+# see https://github.com/toy/image_optim for config options
+skip_missing_workers: true
+pngout: false
+svgo: false
+
+allow_lossy: true
+advpng: false
+jpegoptim:
+  allow_lossy: true
+  max_quality: 70
+jpegrecompress:
+  allow_lossy: true
+  quality: 0
+optipng: false
+pngcrush: false
+pngquant:
+  allow_lossy: true
