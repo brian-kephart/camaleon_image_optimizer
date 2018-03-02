@@ -5,7 +5,7 @@ This is a convenient image optimizer plugin for Camaleon CMS. Compressing images
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'camaleon_image_optimizer', github: 'brian-kephart/camaleon_image_optimizer'
+gem 'camaleon_image_optimizer'
 ```
 
 And then execute:
