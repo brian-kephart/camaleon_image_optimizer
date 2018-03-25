@@ -14,5 +14,4 @@ class Plugins::CamaleonImageOptimizer::AdminController < CamaleonCms::Apps::Plug
     @plugin.set_field_values(params[:field_options]) if params[:field_options].present? # save custom field values
     redirect_to url_for(action: :settings), notice: 'Settings Saved Successfully'
   end
-  # add custom methods below ....
 end
