@@ -34,7 +34,10 @@ private
 
   def camaleon_image_optimizer_settings
     @camaleon_image_optimizer_settings ||= camaleon_image_optimizer_default_settings.tap do |cios|
-      cios['jpegoptim']['max_quality'] = current_plugin.get_option('quality') unless current_plugin.get_option('quality').blank?
+      unless current_plugin.get_option('quality').blank?
+        cios['jpegoptim']['max_quality'] = current_plugin.get_option 'quality'
+        cios['pngquant']['quality'] = (0..current_plugin.get_option('quality'))
+      end
     end
   end
 
