@@ -1,11 +1,11 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4>Image Optimizer Settings</h4>
+    <h4><%= cama_t 'image_optimizer_settings' %></h4>
   </div>
   <div class="panel-body">
     <%= form_tag(url_for(action: :save_settings), class: 'validate') do %>
       <div class="form-group">
-        <label>Max Quality: 1 (most compressed) – 100 (highest quality), default is 70. </label>
+        <label><%= cama_t 'max_quality' %>: 1 (<%= cama_t 'most_compressed' %>) – 100 (<%= cama_t 'highest_quality' %>), <%= cama_t 'default_is' %> 70.</label>
         <%= number_field_tag 'options[quality]', @plugin.get_option('quality'), class: 'form-control required', min: 1, max: 100, step: 1, value: @plugin.get_option('quality') %>
       </div>
       <%= render partial: "camaleon_cms/admin/settings/custom_fields/render", locals: { record: @plugin, field_groups: @plugin.get_field_groups } %>
