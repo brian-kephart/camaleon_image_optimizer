@@ -1,5 +1,5 @@
 # Camaleon Image Optimizer
-This is a convenient image optimizer plugin for Camaleon CMS. Compressing images improves load times and thus SEO. It uses the [image_optim gem](https://github.com/toy/image_optim) under the hood. This gem contains multiple utilities for compressing GIF, JPEG and PNG files. My experience has been that GIFs JPEGs are easily crushable with these tools, but using multiple PNG compressors is extremely slow. Thus, only one of the PNG compressors is enabled here.
+This is a convenient image optimizer plugin for Camaleon CMS. Compressing images improves load times and thus SEO. It uses the [image_optim gem](https://github.com/toy/image_optim) under the hood. This gem contains multiple utilities for compressing GIF, JPEG, PNG, and SVG files. My experience has been that GIFs JPEGs are easily crushable with these tools, but using multiple PNG compressors is extremely slow. Thus, only one of the PNG compressors is enabled here.
 
 Currently the only setting exposed by the plugin is `max_quality`, affecting JPEG and PNG images. Please note that setting this to the maximum will still result in some compression.
 
@@ -18,6 +18,11 @@ $ bundle
 Or install it yourself as:
 ```bash
 $ gem install camaleon_image_optimizer
+```
+
+If you need support for compressing SVG files, install [SVGO](https://github.com/svg/svgo). Note that you need to do this on your production server, and you must first have NPM installed.
+```bash
+$ npm install -g svgo
 ```
 
 ## Usage

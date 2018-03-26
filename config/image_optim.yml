@@ -120,7 +120,7 @@ pngquant:
 # SVGO list of plugins is here: https://github.com/svg/svgo. Note that each
 # plugin has its own enabled/disabled default, so this worker will be effective
 # even with enable_plugins set to [].
-svgo: false # not included in image_optim_pack gem
+# svgo: false # not included in image_optim_pack gem
   # List of plugins to disable (defaults to [])
   # disable_plugins:
   # List of plugins to enable (defaults to [])
