@@ -25,6 +25,19 @@ If you need support for compressing SVG files, install [SVGO](https://github.com
 $ npm install -g svgo
 ```
 
+If you instead install SVGO locally:
+```bash
+$ npm install svgo
+```
+or:
+```bash
+$ yarn add svgo
+```
+...then you must add this variable to your Production environment:
+```
+SVGO_BIN='node_modules/svgo/bin/svgo'
+```
+
 ## Usage
 Just activate the plugin in Camaleon's admin panel.
 
