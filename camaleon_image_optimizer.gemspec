@@ -9,12 +9,16 @@ Gem::Specification.new do |s|
   s.version     = CamaleonImageOptimizer::VERSION
   s.authors     = ["Brian Kephart"]
   s.email       = ["briantkephart@gmail.com"]
-  s.homepage    = ""
+  s.homepage    = "https://www.github.com/brian-kephart/camaleon_image_optimizer"
   s.summary     = "Compress uploaded images for faster page loads and better SEO."
   s.description = "Compress uploaded images for faster page loads and better SEO."
   s.license     = "MIT"
-
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files       = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.metadata    = {
+    "homepage_uri"    => "https://www.github.com/brian-kephart/camaleon_image_optimizer",
+    "changelog_uri"   => "https://www.github.com/brian-kephart/camaleon_image_optimizer/blob/master/CHANGELOG.md",
+    "source_code_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer"
+  }
 
   s.add_dependency "camaleon_cms", "~> 2.0"
   s.add_dependency "image_optim", "~> 0.26"
