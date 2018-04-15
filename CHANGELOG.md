@@ -1,3 +1,7 @@
+## 0.3.2
+
+- Fixed missing `on_upgrade` hook
+
 ## 0.3.1
 
 Added CHANGELOG.md & metadata
