@@ -1,3 +1,7 @@
+## unreleased
+
+- Specify `sqlite3` version for development
+
 ## 0.3.2
 
 - Fixed missing `on_upgrade` hook
