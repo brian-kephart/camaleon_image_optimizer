@@ -1,10 +1,11 @@
 ## unreleased
 
-- Specify `sqlite3` version for development
+Get test suite to run
+Specify `sqlite3` version for development
 
 ## 0.3.2
 
-- Fixed missing `on_upgrade` hook
+Fixed missing `on_upgrade` hook
 
 ## 0.3.1
 
