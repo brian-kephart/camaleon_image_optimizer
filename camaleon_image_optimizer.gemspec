@@ -20,6 +20,8 @@ Gem::Specification.new do |s|
     "source_code_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer"
   }
 
+  s.required_ruby_version = '~> 2.2'
+
   s.add_dependency "camaleon_cms", "~> 2.0"
   s.add_dependency "image_optim", "~> 0.26"
   s.add_dependency "image_optim_pack", "~> 0.5"
