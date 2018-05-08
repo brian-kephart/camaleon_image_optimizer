@@ -1,5 +1,6 @@
 ## unreleased
 
+Add Travis CI
 Get test suite to run
 Specify `sqlite3` version for development
 
