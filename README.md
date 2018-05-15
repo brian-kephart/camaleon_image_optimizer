@@ -43,5 +43,8 @@ SVGO_BIN='node_modules/svgo/bin/svgo'
 ## Usage
 Just activate the plugin in Camaleon's admin panel.
 
+## Contributing
+See CONTRIBUTING.md
+
 ## License
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).

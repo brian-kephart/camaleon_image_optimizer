@@ -4,6 +4,7 @@
 - Get test suite to run
 - Specify `sqlite3` version for development
 - Set up Rubocop
+- Added CONTRIBUTING.md
 
 ## 0.3.2
 
