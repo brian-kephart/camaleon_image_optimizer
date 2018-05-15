@@ -3,14 +3,15 @@
 - Add Travis CI
 - Get test suite to run
 - Specify `sqlite3` version for development
+- Set up Rubocop
 
 ## 0.3.2
 
-Fixed missing `on_upgrade` hook
+- Fixed missing `on_upgrade` hook
 
 ## 0.3.1
 
-Added CHANGELOG.md & metadata
+- Added CHANGELOG.md & metadata
 
 ## 0.3.0
 

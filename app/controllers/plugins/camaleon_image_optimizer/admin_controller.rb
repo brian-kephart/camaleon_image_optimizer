@@ -1,11 +1,9 @@
 class Plugins::CamaleonImageOptimizer::AdminController < CamaleonCms::Apps::PluginsAdminController
   include Plugins::CamaleonImageOptimizer::MainHelper
-  def index
-  end
+  def index; end
 
   # show settings form
-  def settings
-  end
+  def settings; end
 
   # save values from settings form
   def save_settings

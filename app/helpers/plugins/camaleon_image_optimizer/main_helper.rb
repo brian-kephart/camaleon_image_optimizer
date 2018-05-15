@@ -1,16 +1,16 @@
+# This modules public methods are called via hooks defined in config/camaleon_plugin.json
 module Plugins::CamaleonImageOptimizer::MainHelper
   require 'image_optim'
 
   def self.included(klass)
-    # klass.helper_method [:my_helper_method] rescue "" # here your methods accessible from views
+    # klass.helper_method [:my_helper_method] rescue "" # methods accessible from views
   end
 
   def camaleon_image_optimizer_on_active(plugin)
     camaleon_image_optimizer_options plugin
   end
 
-  def camaleon_image_optimizer_on_inactive(plugin)
-  end
+  def camaleon_image_optimizer_on_inactive(plugin); end
 
   def camaleon_image_optimizer_on_upgrade(plugin)
     camaleon_image_optimizer_options plugin
@@ -26,7 +26,7 @@ module Plugins::CamaleonImageOptimizer::MainHelper
     settings[:uploaded_io] = File.open settings[:uploaded_io].path
   end
 
-private
+  private
 
   def camaleon_image_optimizer_options(plugin)
     plugin.set_option('quality', camaleon_image_optimizer_default_settings['jpegoptim']['max_quality']) unless plugin.get_option('quality').present?
@@ -49,5 +49,4 @@ private
       YAML.load_file gem_root.join('config', 'image_optim.yml')
     end
   end
-
 end
