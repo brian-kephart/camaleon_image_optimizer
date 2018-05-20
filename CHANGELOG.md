@@ -5,6 +5,7 @@
 - Specify `sqlite3` version for development
 - Set up Rubocop
 - Added CONTRIBUTING.md
+- Require Ruby 2.3+
 
 ## 0.3.2
 
