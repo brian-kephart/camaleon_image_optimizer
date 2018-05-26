@@ -41,9 +41,9 @@ module Plugins::CamaleonImageOptimizer::MainHelper
     end
   end
 
+  # default settings in config/image_optim.yml
   def camaleon_image_optimizer_default_settings
     @camaleon_image_optimizer_default_settings ||= begin
-      # default settings in config/image_optim.yml
       spec = Gem::Specification.find_by_name 'camaleon_image_optimizer'
       gem_root = Pathname.new spec.gem_dir
       YAML.load_file gem_root.join('config', 'image_optim.yml')

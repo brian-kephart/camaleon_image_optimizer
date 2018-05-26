@@ -10,6 +10,12 @@ Metrics/AbcSize:
 Metrics/LineLength:
   Enabled: false
 
+Metrics/MethodLength:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
 Style/ClassAndModuleChildren:
   Enabled: false
 

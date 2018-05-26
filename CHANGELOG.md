@@ -1,11 +1,11 @@
 ## unreleased
 
 - Add Travis CI
-- Get test suite to run
 - Specify `sqlite3` version for development
 - Set up Rubocop
 - Added CONTRIBUTING.md
 - Require Ruby 2.3+
+- Add test suite
 
 ## 0.3.2
 
