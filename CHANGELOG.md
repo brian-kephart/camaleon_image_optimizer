@@ -1,4 +1,4 @@
-## unreleased
+## 0.3.3
 
 - Add Travis CI
 - Specify `sqlite3` version for development
