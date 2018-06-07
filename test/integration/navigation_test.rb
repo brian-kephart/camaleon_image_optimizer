@@ -57,10 +57,15 @@ class NavigationTest < ActionDispatch::IntegrationTest
   end
 
   def admin_sign_in(user = 'admin', pass = 'admin123')
+    current_site.set_option 'date_notified', Date.today # Avoid weird threading bug
     post 'http://localhost:3000/admin/login', params: {
       user: { username: user, password: pass }
     }
     follow_redirect!
     assert_equal 'Welcome!!!', flash[:notice], 'Login failed'
+  end
+
+  def current_site
+    CamaleonCms::Site.first.decorate
   end
 end
