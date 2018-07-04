@@ -1,3 +1,7 @@
+## 1.0.0
+
+- Use YAML#safe_load to load config
+
 ## 0.3.3
 
 - Add Travis CI
