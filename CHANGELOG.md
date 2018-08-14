@@ -1,3 +1,7 @@
+## unreleased
+
+- Update .rubocop.yml, add magic comments
+
 ## 1.0.0
 
 - Use YAML#safe_load to load config

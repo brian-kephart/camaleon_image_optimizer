@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Plugins::CamaleonImageOptimizer::AdminController < CamaleonCms::Apps::PluginsAdminController
   include Plugins::CamaleonImageOptimizer::MainHelper
   def index; end

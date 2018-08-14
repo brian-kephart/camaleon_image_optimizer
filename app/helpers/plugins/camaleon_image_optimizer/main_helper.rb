@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This modules public methods are called via hooks defined in config/camaleon_plugin.json
 module Plugins::CamaleonImageOptimizer::MainHelper
   require 'image_optim'

@@ -1,14 +1,16 @@
+# frozen_string_literal: true
+
 require 'test_helper'
 
 class CamaleonImageOptimizer::Test < ActiveSupport::TestCase
-  ORIG_JPG = 'test/dummy/app/assets/images/orig.jpg'.freeze
-  TEST_JPG = 'test/dummy/app/assets/images/test.jpg'.freeze
-  ORIG_PNG = 'test/dummy/app/assets/images/orig.png'.freeze
-  TEST_PNG = 'test/dummy/app/assets/images/test.png'.freeze
-  ORIG_GIF = 'test/dummy/app/assets/images/orig.gif'.freeze
-  TEST_GIF = 'test/dummy/app/assets/images/test.gif'.freeze
-  ORIG_SVG = 'test/dummy/app/assets/images/orig.svg'.freeze
-  TEST_SVG = 'test/dummy/app/assets/images/test.svg'.freeze
+  ORIG_JPG = 'test/dummy/app/assets/images/orig.jpg'
+  TEST_JPG = 'test/dummy/app/assets/images/test.jpg'
+  ORIG_PNG = 'test/dummy/app/assets/images/orig.png'
+  TEST_PNG = 'test/dummy/app/assets/images/test.png'
+  ORIG_GIF = 'test/dummy/app/assets/images/orig.gif'
+  TEST_GIF = 'test/dummy/app/assets/images/test.gif'
+  ORIG_SVG = 'test/dummy/app/assets/images/orig.svg'
+  TEST_SVG = 'test/dummy/app/assets/images/test.svg'
 
   CONTROLLER = Plugins::CamaleonImageOptimizer::AdminController
 
