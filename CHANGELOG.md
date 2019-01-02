@@ -1,6 +1,8 @@
 ## unreleased
 
 - Update .rubocop.yml, add magic comments
+- Test on Ruby 2.6
+- Require Ruby 2.4+
 
 ## 1.0.0
 
