@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/ruby-2.3%2B-red.svg)
+![](https://img.shields.io/badge/ruby-2.4%2B-red.svg)
 ![Gem Version](https://img.shields.io/gem/v/camaleon_image_optimizer.svg?colorB=blue)
 [![Build Status](https://travis-ci.org/brian-kephart/camaleon_image_optimizer.svg?branch=master)](https://travis-ci.org/brian-kephart/camaleon_image_optimizer)
 
