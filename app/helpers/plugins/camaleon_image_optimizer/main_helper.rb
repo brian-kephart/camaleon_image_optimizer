@@ -2,7 +2,7 @@
 
 # This modules public methods are called via hooks defined in config/camaleon_plugin.json
 module Plugins::CamaleonImageOptimizer::MainHelper
-  require 'image_optim'
+  require "image_optim"
 
   def self.included(klass)
     # klass.helper_method [:my_helper_method] rescue "" # methods accessible from views
@@ -12,14 +12,15 @@ module Plugins::CamaleonImageOptimizer::MainHelper
     camaleon_image_optimizer_options plugin
   end
 
-  def camaleon_image_optimizer_on_inactive(plugin); end
+  def camaleon_image_optimizer_on_inactive(plugin)
+  end
 
   def camaleon_image_optimizer_on_upgrade(plugin)
     camaleon_image_optimizer_options plugin
   end
 
   def camaleon_image_optimizer_on_plugin_options(args)
-    args[:links] << link_to('Settings', admin_plugins_camaleon_image_optimizer_settings_path)
+    args[:links] << link_to("Settings", admin_plugins_camaleon_image_optimizer_settings_path)
   end
 
   def cama_optimize_image(settings)
@@ -31,14 +32,14 @@ module Plugins::CamaleonImageOptimizer::MainHelper
   private
 
   def camaleon_image_optimizer_options(plugin)
-    plugin.set_option('quality', camaleon_image_optimizer_default_settings['jpegoptim']['max_quality']) unless plugin.get_option('quality').present?
+    plugin.set_option("quality", camaleon_image_optimizer_default_settings["jpegoptim"]["max_quality"]) unless plugin.get_option("quality").present?
   end
 
   def camaleon_image_optimizer_settings
     @camaleon_image_optimizer_settings ||= camaleon_image_optimizer_default_settings.tap do |cios|
-      unless current_plugin.get_option('quality').blank?
-        cios['jpegoptim']['max_quality'] = current_plugin.get_option 'quality'
-        cios['pngquant']['quality'] = (0..current_plugin.get_option('quality'))
+      unless current_plugin.get_option("quality").blank?
+        cios["jpegoptim"]["max_quality"] = current_plugin.get_option "quality"
+        cios["pngquant"]["quality"] = (0..current_plugin.get_option("quality"))
       end
     end
   end
@@ -46,9 +47,9 @@ module Plugins::CamaleonImageOptimizer::MainHelper
   # default settings in config/image_optim.yml
   def camaleon_image_optimizer_default_settings
     @camaleon_image_optimizer_default_settings ||= begin
-      spec = Gem::Specification.find_by_name 'camaleon_image_optimizer'
+      spec = Gem::Specification.find_by_name "camaleon_image_optimizer"
       gem_root = Pathname.new spec.gem_dir
-      YAML.safe_load File.open(gem_root.join('config', 'image_optim.yml')), [Range]
+      YAML.safe_load File.open(gem_root.join("config", "image_optim.yml")), [Range]
     end
   end
 end

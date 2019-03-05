@@ -1,6 +1,7 @@
 ## unreleased
 
-- Update .rubocop.yml, add magic comments
+- Adopt StandardRB code style, remove .rubocop.yml
+- Add magic comments
 - Test on Ruby 2.6
 - Require Ruby 2.4+
 
