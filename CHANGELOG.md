@@ -2,8 +2,8 @@
 
 - Adopt StandardRB code style, remove .rubocop.yml
 - Add magic comments
-- Test on Ruby 2.6
-- Require Ruby 2.4+
+- Test on Ruby 2.6 & 2.7
+- Require Ruby 2.5+
 
 ## 1.0.0
 
