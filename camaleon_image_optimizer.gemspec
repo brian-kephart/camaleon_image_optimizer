@@ -28,5 +28,5 @@ Gem::Specification.new do |s|
   s.add_dependency "image_optim", "~> 0.26"
   s.add_dependency "image_optim_pack", "~> 0.5"
 
-  s.add_development_dependency "sqlite3", "~> 1.3.13"
+  s.add_development_dependency "sqlite3", "~> 1.4"
 end
