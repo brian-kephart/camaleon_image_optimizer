@@ -12,4 +12,3 @@ camaleon_image_optimizer*.gem
 Gemfile.lock
 node_modules/
 package.json
-yarn.lock
