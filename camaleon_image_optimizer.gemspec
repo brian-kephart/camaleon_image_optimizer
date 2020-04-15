@@ -7,19 +7,19 @@ require "camaleon_image_optimizer/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "camaleon_image_optimizer"
-  s.version     = CamaleonImageOptimizer::VERSION
-  s.authors     = ["Brian Kephart"]
-  s.email       = ["briantkephart@gmail.com"]
-  s.homepage    = "https://www.github.com/brian-kephart/camaleon_image_optimizer"
-  s.summary     = "Compress uploaded images for faster page loads and better SEO."
+  s.name = "camaleon_image_optimizer"
+  s.version = CamaleonImageOptimizer::VERSION
+  s.authors = ["Brian Kephart"]
+  s.email = ["briantkephart@gmail.com"]
+  s.homepage = "https://www.github.com/brian-kephart/camaleon_image_optimizer"
+  s.summary = "Compress uploaded images for faster page loads and better SEO."
   s.description = "Compress uploaded images for faster page loads and better SEO."
-  s.license     = "MIT"
-  s.files       = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
-  s.metadata    = {
+  s.license = "MIT"
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.metadata = {
     "homepage_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer",
     "changelog_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer/blob/master/CHANGELOG.md",
-    "source_code_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer",
+    "source_code_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer"
   }
 
   s.required_ruby_version = "~> 2.5"

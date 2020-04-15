@@ -47,7 +47,7 @@ class NavigationTest < ActionDispatch::IntegrationTest
 
   def set_image_quality(quality)
     post "http://localhost:3000/admin/plugins/camaleon_image_optimizer/save_settings", params: {
-      options: {quality: quality},
+      options: {quality: quality}
     }
     follow_redirect!
     assert_equal "Settings Saved Successfully", flash[:notice]
@@ -61,7 +61,7 @@ class NavigationTest < ActionDispatch::IntegrationTest
   def admin_sign_in(user = "admin", pass = "admin123")
     current_site.set_option "date_notified", Date.today # Avoid weird threading bug
     post "http://localhost:3000/admin/login", params: {
-      user: {username: user, password: pass},
+      user: {username: user, password: pass}
     }
     follow_redirect!
     assert_equal "Welcome!!!", flash[:notice], "Login failed"
