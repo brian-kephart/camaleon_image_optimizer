@@ -1,8 +1,9 @@
-## unreleased
+## 1.0.1
 
+- Ruby 3.0 support
 - Adopt StandardRB code style, remove .rubocop.yml
 - Add magic comments
-- Test on Ruby 2.6 & 2.7
+- Test on Ruby 2.6, 2.7, 3.0
 - Require Ruby 2.5+
 
 ## 1.0.0
