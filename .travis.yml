@@ -9,6 +9,8 @@ matrix:
   allow_failures:
   - rvm: ruby-head
 bundler_args: -j4
+before_install:
+  - nvm install node
 script:
   - bundle exec standardrb --no-fix
   - bundle exec rails test
