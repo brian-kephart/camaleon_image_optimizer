@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/ruby-2.6%2B-red.svg)
 ![Gem Version](https://img.shields.io/gem/v/camaleon_image_optimizer.svg?colorB=blue)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
-[![Build Status](https://travis-ci.org/brian-kephart/camaleon_image_optimizer.svg?branch=master)](https://travis-ci.org/brian-kephart/camaleon_image_optimizer)
+[![Build](https://github.com/brian-kephart/camaleon_image_optimizer/actions/workflows/build.yml/badge.svg)](https://github.com/brian-kephart/camaleon_image_optimizer/actions/workflows/build.yml)
 
 
 
