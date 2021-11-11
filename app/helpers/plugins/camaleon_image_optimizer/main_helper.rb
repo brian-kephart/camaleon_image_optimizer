@@ -49,7 +49,7 @@ module Plugins::CamaleonImageOptimizer::MainHelper
     @camaleon_image_optimizer_default_settings ||= begin
       spec = Gem::Specification.find_by_name "camaleon_image_optimizer"
       gem_root = Pathname.new spec.gem_dir
-      YAML.safe_load File.open(gem_root.join("config", "image_optim.yml")), [Range]
+      YAML.safe_load File.open(gem_root.join("config", "image_optim.yml")), permitted_classes: [Range]
     end
   end
 end
