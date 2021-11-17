@@ -19,7 +19,8 @@ Gem::Specification.new do |s|
   s.metadata = {
     "homepage_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer",
     "changelog_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer/blob/master/CHANGELOG.md",
-    "source_code_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer"
+    "source_code_uri" => "https://www.github.com/brian-kephart/camaleon_image_optimizer",
+    "rubygems_mfa_required" => "true"
   }
 
   s.required_ruby_version = ">= 2.6"
