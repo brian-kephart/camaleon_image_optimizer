@@ -1,4 +1,5 @@
 .bundle/
+.vscode/
 log/*.log
 pkg/
 test/dummy/db/development.sqlite3
