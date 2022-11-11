@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
     "rubygems_mfa_required" => "true"
   }
 
-  s.required_ruby_version = ">= 2.6"
+  s.required_ruby_version = ">= 2.7"
 
   s.add_dependency "camaleon_cms", "~> 2.0"
   s.add_dependency "image_optim", "~> 0.26"

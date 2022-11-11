@@ -12,7 +12,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-          ruby-version: 2.6
+          ruby-version: 2.7
 
       - name: Run linters
         run:  bundle exec standardrb --no-fix
@@ -22,7 +22,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ruby: [2.6, 2.7, 3.0.3, 3.1]
+        ruby: [2.7, 3.0.3, 3.1]
     steps:
       - name: Checkout code
         uses: actions/checkout@v2

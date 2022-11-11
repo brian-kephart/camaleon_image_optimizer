@@ -11,11 +11,6 @@ group :development, :test do
   gem "camaleon_cms", github: "owen2345/camaleon-cms"
   gem "draper"
   gem "standard"
-
-  # Until the Mail gem is updated for Ruby 3.1
-  gem "net-smtp"
-  gem "net-pop"
-  gem "net-imap"
 end
 
 # Declare any dependencies that are still in development here instead of in
