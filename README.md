@@ -42,7 +42,7 @@ $ yarn add svgo
 ```
 ...then you must add this variable to your Production environment:
 ```
-SVGO_BIN='node_modules/svgo/bin/svgo'
+SVGO_BIN='node_modules/svgo/bin/svgo.js'
 ```
 
 ## Usage

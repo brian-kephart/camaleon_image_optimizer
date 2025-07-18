@@ -52,7 +52,7 @@ class CamaleonImageOptimizer::Test < ActiveSupport::TestCase
     # SVGO requires separate installation. See README.md.
     `yarn add svgo`
     # Path to SVGO binary must be specified for non-global installation.
-    ENV["SVGO_BIN"] = "node_modules/svgo/bin/svgo"
+    ENV["SVGO_BIN"] = "node_modules/svgo/bin/svgo.js"
 
     original_size = File.size TEST_SVG
     CONTROLLER.new.cama_optimize_image uploaded_io: File.open(TEST_SVG)
